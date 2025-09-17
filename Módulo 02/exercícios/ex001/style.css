@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+    background-color: #e9e6b9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+h1 {
+    color: #faebd7; 
+    background-color: #a0522d;
+    width: 350px;
+    height: 60px;
+    padding: 20px;
+    border: 10px dotted red;
+    margin: auto;
+    outline: 5px solid black;
+}
+
+h1#principal {
+    color: aquamarine;
+    background-color: blueviolet;
+
+}
+
+.topico {
+    color: blueviolet;
+}
+
+span.info {
+    color: #a0522d;
+}
