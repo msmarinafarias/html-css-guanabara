@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+        }
+
+        table {
+            width: 600px;
+            height: 300px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            padding-bottom: 10px;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead, tfoot {
+            background-color: darkslategray;
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        td.num {
+            color: brown;
+            font-weight: bolder;
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Aprendendo a montar tabelas</h1>
+    <br>
+    <h2>Tabela simples</h2>
+
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+            <td>D1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+            <td>D2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+            <td>D3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+            <td>D4</td>
+        </tr>
+    </table>
+    <br>
+    <h2>Tabela grande</h2>
+    
+    <br>
+    <table>
+        <caption>Os 10 estados mais populosos do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Unidade federativa</th>
+                <th scope="col">População</th>
+                <th scope="col">% da população total</th>
+                <th scope="col"> País comparável (habitantes)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr> <!--Estado 01-->
+                <td>São Paulo</td>
+                <td class="num">46 081 801</td>
+                <td>21,59%</td>
+                <td>Argentina (45 851 378)</td>
+            </tr>
+
+            <tr> <!--Estado 02-->
+                <td>Minas Gerais</td>
+                <td class="num">21 393 441</td>
+                <td>10,02%</td>
+                <td>Chade (21 003 705)</td>
+            </tr>
+
+            <tr> <!--Estado 03-->
+                <td>Rio de Janeiro</td>
+                <td class="num">17 223 547</td>
+                <td>8,07%</td>
+                <td>Zimbabwe (16 950 795)</td>
+            </tr>
+
+            <tr> <!--Estado 04-->
+                <td>Bahia</td>
+                <td class="num">14 870 907</td>
+                <td>6,97%</td>
+                <td>Benim (14 814 460)</td>
+            </tr>
+
+            <tr> <!--Estado 05-->
+                <td>Paraná</td>
+                <td class="num">11 890 517</td>
+                <td>5,57%</td>
+                <td>Haiti (11 906 095)</td>
+            </tr>
+
+              <tr> <!--Estado 06-->
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 233 263</td>
+                <td>5,26%</td>
+                <td>Emirados Árabes Unidos (11 346 000)</td>
+            </tr>
+
+              <tr> <!--Estado 07-->
+                <td>Pernambuco</td>
+                <td class="num">9 562 007</td>
+                <td>4,48%</td>
+                <td>Israel (9 517 181)</td>
+            </tr>
+
+            <tr> <!--Estado 08-->
+                <td>Ceará</td>
+                <td class="num">9 268 836</td>
+                <td>4,34%</td>
+                <td>Áustria (9 113 574)</td>
+            </tr>
+
+            <tr> <!--Estado 09-->
+                <td>Pará</td>
+                <td class="num">8 711 196</td>
+                <td>4,08%</td>
+                <td>Serra Leoa (8 819 794)</td>
+            </tr>
+
+            <tr> <!--Estado 10-->
+                <td>Santa Catarina</td>
+                <td class="num">8 187 029</td>
+                <td>3,84%</td>
+                <td>Laos (7 873 046)</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <th scope="row">Total de habitantes</th>
+                <td><strong>0000000</strong></td>
+
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
