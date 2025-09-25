@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança de iFrames</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            text-align: justify;
+        }
+        
+        iframe {
+            width: 400px;
+            height: 200px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando a segurança de iFrames</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid optio repudiandae corrupti ab. Temporibus, dolores nam! Expedita excepturi quo ratione obcaecati, vel, accusantium ducimus praesentium officia quam, numquam corrupti eos?</p>
+
+    <iframe src="index.html" frameborder="1" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore obcaecati fugit, culpa aspernatur natus aut ea molestiae molestias odit quam ut debitis vel eveniet hic maiores deserunt assumenda voluptate quis?</p>
+</body>
+</html>
