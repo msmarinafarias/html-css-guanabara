@@ -74,6 +74,43 @@
         </p>
 
     </form>
+    <br>
+    <h1>Controles de e-mail e telefone</h1>
+    <h2>Utilizando RegEx e Fieldset</h2>
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" autocomplete="name" required placeholder="Nome completo">
+            </p>
+
+            <p>
+                <label for="idade">Idade:</label>
+                <input type="number" name="idade" id="idade" required min="18" max="100" placeholder="18">
+            </p>
+
+            <p>
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" name="nascimento" id="nascimento" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" autocomplete="email" required>
+            </p>
+
+            <p>
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}\d{4}$" placeholder="(11)9XXXXXXXX" required>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="submit" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
     
 </body>
 </html>
