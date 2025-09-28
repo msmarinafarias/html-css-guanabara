@@ -26,10 +26,6 @@
             text-align: center;
         }
 
-        main h2 {
-            text-decoration: underline;
-        }
-
         main h3 {
             color: brown;
         }
@@ -46,61 +42,68 @@
 <body>
     <main>
         <h1>Formulários em HTML5</h1>
-        <h2>Formulário simples</h2>
-        <form action="cadastro.php" autocomplete="off">
-            <p><label for="inome">Nome:</label>
-                <input type="text" name="nome" id="inome">
-            </p>
-            <p><label for="isobrenome">Sobrenome:</label>
-                <input type="text" name="sobrenome" id="isobrenome">
-            </p>
-            <p><input type="submit" value="Enviar"></p>
-        </form>
+        <br>
+        <h2>Formulário simples (com fieldset)</h2>
+        <fieldset>
+            <form action="cadastro.php" autocomplete="off">
+                <p><label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome">
+                </p>
+                <p><label for="isobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="isobrenome">
+                </p>
+                <p><input type="submit" value="Enviar"></p>
+            </form>
+        </fieldset>
         <br>
         <h2>Cadastrando senhas</h2>
-        <h3>Utilizando o método POST</h3>
-        <form action="cadastro.php" method="get">
-            <p>
-                <label for="isu">Usuário:</label>
-                <input type="text" name="usu" id="iusu" required maxlength="15" size="15" placeholder="digite seu nome" autocomplete="username">
-            </p>
-            <p>
-                <label for="isen">Senha:</label>
-                <input type="password" name="sen" id="isen" required minlength="8" size="15" placeholder="digite sua senha" autocomplete="current-password">
-            </p>
-            <p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
-            </p>
-        </form>
+        <h4>Utilizando o método POST e reset button</h4>
+        <fieldset>
+            <form action="cadastro.php" method="get">
+                <p>
+                    <label for="isu">Usuário:</label>
+                    <input type="text" name="usu" id="iusu" required maxlength="15" size="15" placeholder="digite seu nome" autocomplete="username">
+                </p>
+                <p>
+                    <label for="isen">Senha:</label>
+                    <input type="password" name="sen" id="isen" required minlength="8" size="15" placeholder="digite sua senha" autocomplete="current-password">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </fieldset>
         <br>
         <h2>Outros controles de formulário</h2>
         <h3>Números, meses, datas e hora</h3>
-        <form action="" method="get" autocomplete="on">
-            <p>
-                <label for="inome">Aluno:</label>
-                <input type="text" name="nome" id="inome" size="20" placeholder="nome completo">
-            </p>
-            <p>
-                <label for="imedia">Média:</label>
-                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="de 0 a 10" step="0.1">
-            </p>
-            <p>
-                <label for="idata">Dia da prova:</label>
-                <input type="date" name="data" id="idata">
-            </p>
-            <p>
-                <label for="ihorario">Horário da prova:</label>
-                <input type="time" name="horario" id="ihorario">
-            </p>
-            <p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
-            </p>
-        </form>
+        <fieldset>
+            <form action="" method="get" autocomplete="on">
+                <p>
+                    <label for="inome">Aluno:</label>
+                    <input type="text" name="nome" id="inome" size="20" placeholder="nome completo">
+                </p>
+                <p>
+                    <label for="imedia">Média:</label>
+                    <input type="number" name="media" id="imedia" min="0" max="10" placeholder="de 0 a 10" step="0.1">
+                </p>
+                <p>
+                    <label for="idata">Dia da prova:</label>
+                    <input type="date" name="data" id="idata">
+                </p>
+                <p>
+                    <label for="ihorario">Horário da prova:</label>
+                    <input type="time" name="horario" id="ihorario">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </fieldset>
         <br>
-        <h2>Controles de e-mail e telefone</h2>
-        <h3>Utilizando RegEx e Fieldset</h3>
+        <h3>E-mail e telefone</h3>
+        <h4>Com legend e auxílio de RegEx nas configurações</h4>
         <form action="" method="get" autocomplete="on">
             <fieldset>
                 <legend>Dados Pessoais</legend>
@@ -131,7 +134,7 @@
             </fieldset>
         </form>
         <br>
-        <h2>Radio button e checkbox</h2>
+        <h3>Radio button e checkbox</h3>
         <form action="">
             <fieldset>
                 <legend>Como você se declara?</legend>
@@ -160,7 +163,77 @@
                     <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
                 </p>
             </fieldset>
-        </form>
+            </form>
+            <br>
+            <h3>Color, range e file</h3>
+            <fieldset>
+                <form action="" method="post">
+                    <p>
+                        <label for="cor">Cor:</label>
+                        <input type="color" name="cor" id="cor" value="#6A5ACD">
+                    </p>
+                    <p>
+                        <label for="nivel">Nível de satisfação:</label>
+                        <input type="range" name="nivel" id="nivel" min="1" max="10" value="5">
+                    </p>
+
+                    <p>
+                        <label for="anexo">Anexar:</label>
+                        <input type="file" name="anexo" id="anexo">
+                    </p>
+                    <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+                </form>
+            </fieldset>
+            <br>
+            <h2>Controles fora do input</h2>
+            <h3>Select, datalist e textarea</h3>
+            <fieldset>
+                <form action="" method="post">
+                    <label for="est">Estado:</label>
+                    <select name="estado" id="est">
+                        <option value="" selected>-- Escolha --</option>
+                        <optgroup label="Região Sudeste">
+                            <option value="ES">Espírito Santo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                        </optgroup>
+
+                        <optgroup label="Região Nordeste">
+                            <option value="AL">Alagoas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="SE">Sergipe</option>
+                        </optgroup>
+                    </select>
+                    <p>
+                        <label for="iprof">Profissão:</label>
+                        <input type="text" name="profissao" id="iprof" list="lstprof">
+                        <datalist id="lstprof">
+                            <option value="DEV">Desenvolvedor</option>
+                            <option value="DESI">Designer</option>
+                            <option value="PROF">Professor</option>
+                            <option value="COZ">Cozinheiro</option>
+                            <option value="ADM">Administrador</option>
+                            <option value="FAX">Faxineiro</option>
+                            <option value="INFLU">Influencer</option>
+                            <option value="MOT">Motorista</option>
+                        </datalist>
+                    </p>
+
+                    <p>
+                        <label for="imsg">Mensagem:</label><br>
+                        <textarea name="msg" id="imsg" cols="50" rows="10" placeholder="digite sua mensagem aqui."></textarea>
+                    </p>
+
+                    <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+                </form>
+            </fieldset>
     </main>
 </body>
 </html>
