@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 17px;
+            background-color: lightgray;
+        }
+
+        main {
+            width: 700px;
+            margin: auto;
+            padding: 20px;
+            background-color: beige;
+            border-radius: 30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Exemplos de formulários com output</h1>
+        <h2>Para exibição de resultado de somas</h2>
+
+        <!-- Neste caso, usamos um pouco de linguagem JavaScript integrada ao HTML5 para que o resultado de somas seja exibido ao usuário, porém, o resultado não é registrado em nosso sistema. -->
+
+        <fieldset>
+            <form action="cadastro.php" method="get" autocomplete="on">
+                <p>
+                    <label for="in1">Número 1: </label>
+                    <input type="number" name="num1" id="in1" min="1" max="20" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+                </p>
+                <p>
+                    <label for="in2">Número 2: </label>
+                    <input type="number" name="num2" id="in2" min="1" max="20" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+                </p>
+                <p>
+                    <label for="isoma"><strong>Soma:</strong> </label>
+                    <output id="isoma">0</output>
+                </p>
+                <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+            </form>
+        </fieldset>
+        <br>
+        <h2>Para a exibição de valores em range</h2>
+
+        <fieldset>
+            <form action="cadastro.php">
+                <p>
+                    <label for="inum">Nos avalie:</label>
+                    <input type="range" name="num" id="inum" min="1" max="10" required oninput="media.innerHTML = Number(inum.value)">
+                    <output id="media">5</output>
+                </p>
+
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </fieldset>
+        <br>
+        <h2>Cálculo de idade com JS</h2>
+        <fieldset>
+            <form action="">
+                <p>
+                    <label for="iano">Em que ano você nasceu?</label>
+                    <input type="number" name="ano" id="iano" min="1900" max="2025" oninput="calcIdade()">
+                </p>
+
+                <p>
+                    <label for="iidade">Sua idade é:</label>
+                    <output id="iidade">0</output>
+                </p>
+
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p> 
+            </form>
+            <script>
+                function calcIdade() {
+                let atual = new Date().getFullYear()
+                iidade.innerHTML = Number(atual) - Number(iano.value)
+                }
+            </script>
+        </fieldset>
+
+    </main>
+</body>
+</html>
