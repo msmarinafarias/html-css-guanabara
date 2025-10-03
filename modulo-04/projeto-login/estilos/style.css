@@ -41,7 +41,7 @@ section#login > div#imagem {
     background: #B4CBDB url(../imagens/tubarao-pequeno.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 240px;
+    height: 230px;
 }
 
 section#login > div#formulario {
@@ -57,5 +57,73 @@ section#login > div#formulario {
     text-align: justify;
     padding-top: 10px;
     padding-bottom: 10px;
-    line-height: 1.4em;
+    line-height: 1.3em;
+    font-size: 0.9em;
+}
+
+form > div.campo {
+    height: 40px;
+    background-color: #992EA6;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+form > div.campo > span {
+    color: white;
+    width: 30px;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+form > div.campo > input {
+    height: 85%;
+    width: calc(100% - 36px);
+    border: none;
+    transform: translateY(-6px);
+    border-radius: 3px;
+    padding: 4px;
+    font-size: 1em;
+}
+
+form > div.campo > input[placeholder] {
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+form label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #266F8F;
+    color: white;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;   
+}
+
+form > input[type=submit]:hover {
+    background-color: #283033;
+}
+
+form > button {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #031430;
+    color: white;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;     
+}
+
+form > button:hover {
+    background-color: #283033;
 }
