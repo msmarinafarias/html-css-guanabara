@@ -15,6 +15,7 @@ Mais-escuro: #266F8F */
 
     section#login {
         width: 70vw;
+        height: 60vh;
     }
 
     section#login > div#imagem {
@@ -38,6 +39,7 @@ Mais-escuro: #266F8F */
 
     section#login {
         width: 60vw;
+        height: 70vh;
     }
 
     section#login > div#imagem {

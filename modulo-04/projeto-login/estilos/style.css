@@ -28,11 +28,11 @@ section#login {
 
     background-color: white;
     width: 300px;
-    height: 580px;
+    height: 600px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
 
-    transition: width .2s, height .2s;
+    transition: width .1s, height .1s;
     transition-timing-function: ease; 
 }
 
@@ -41,7 +41,7 @@ section#login > div#imagem {
     background: #B4CBDB url(../imagens/tubarao-pequeno.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 230px;
+    height: 220px;
 }
 
 section#login > div#formulario {
@@ -57,8 +57,8 @@ section#login > div#formulario {
     text-align: justify;
     padding-top: 10px;
     padding-bottom: 10px;
-    line-height: 1.3em;
-    font-size: 0.9em;
+    line-height: 1.2em;
+    font-size: 0.8em;
 }
 
 form > div.campo {
@@ -79,10 +79,10 @@ form > div.campo > input {
     height: 85%;
     width: calc(100% - 36px);
     border: none;
-    transform: translateY(-6px);
     border-radius: 3px;
     padding: 4px;
     font-size: 1em;
+    transform: translateY(-6px);
 }
 
 form > div.campo > input[placeholder] {
@@ -99,7 +99,7 @@ form > input[type=submit] {
     font-size: 1em;
     width: 100%;
     height: 40px;
-    background-color: #266F8F;
+    background-color: #5F98B5;
     color: white;
     margin-top: 15px;
     border: none;
@@ -116,14 +116,35 @@ form > button {
     font-size: 1em;
     width: 100%;
     height: 40px;
-    background-color: #031430;
+    background-color: #0C486D;
     color: white;
     margin-top: 5px;
+    padding: 2px;
     border: none;
     border-radius: 5px;
     cursor: pointer;     
 }
 
 form > button:hover {
+    background-color: #283033;
+}
+
+form > a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #031430;
+    color: white;
+    margin-top: 5px;
+    padding: 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > a:hover {
     background-color: #283033;
 }
