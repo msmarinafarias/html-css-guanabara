@@ -21,8 +21,22 @@ header h1 {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.500);
 }
 
-menu {
+.material-symbols-outlined {
     display: block;
+    background-color: #2d2e8d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.material-symbols-outlined:hover {
+    background-color: #824DF7;
+}
+
+menu {
+    display: none;
     font-size: 18px;
 }
 
@@ -38,6 +52,7 @@ menu a {
     text-decoration: none;
     padding: 10px;
     border-top: 2px solid #4D50F7;
+    cursor: pointer;
 }
 
 menu a:hover {
