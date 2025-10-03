@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #B4CBDB;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden; 
+
+    background-color: white;
+    width: 300px;
+    height: 580px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
+
+    transition: width .2s, height .2s;
+    transition-timing-function: ease; 
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #B4CBDB url(../imagens/tubarao-pequeno.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 240px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+#formulario h1 {
+    text-align: center;
+}
+
+#formulario p {
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.4em;
+}

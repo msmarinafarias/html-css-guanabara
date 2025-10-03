@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/* Paleta de cores para gradiente:
+Azul-branco: #FAFBFD
+Azul-claro: #EEF3F7
+Azul-médio: #B4CBDB
+Médio-escuro: #5F98B5
+Mais-escuro: #266F8F */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body {
+        background-image: linear-gradient(to top, #266F8F, #5F98B5, #B4CBDB, #EEF3F7, #FAFBFD);
+    }
+
+    section#login {
+        width: 70vw;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 45%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 55%;
+    }
+    
+}
+
+@media screen and (min-width: 993px) {
+
+    body {
+        background-image: linear-gradient(to top, #266F8F, #5F98B5, #B4CBDB, #EEF3F7, #FAFBFD);
+    }
+
+    section#login {
+        width: 60vw;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 50%;
+    }
+    
+}
