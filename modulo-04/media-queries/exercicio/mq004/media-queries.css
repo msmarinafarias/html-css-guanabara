@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    
+    .material-symbols-outlined {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        text-align: center;
+    }
+
+    menu li {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    main {
+        width: 60%;
+    }
+}
