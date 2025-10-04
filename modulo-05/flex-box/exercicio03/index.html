@@ -1,7 +1,4 @@
-<!--Exercício para iniciar os estudos em Flexbox
-utilizando apenas os comandos
-display: flex; no div.conteiner {
-e flex: auto; no div.itens {-->
+<!--Exercício para entender Empacotamento e Fluxo no Flexbox, utilizando flex-wrap: wrap, nowrap e wrap-reverse; além da shorthand flex-flow {-->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -15,6 +12,7 @@ e flex: auto; no div.itens {-->
             height: 100px;
 
             display: flex;
+            flex-flow: row wrap;
         }
 
         div.itens {
@@ -29,13 +27,13 @@ e flex: auto; no div.itens {-->
 </head>
 <body>
     <div class="conteiner">
-        <div class="itens">A</div>
-        <div class="itens">B</div>
-        <div class="itens">C</div>
-        <div class="itens">D</div>
-        <div class="itens">E</div>
-        <div class="itens">F</div>
-        <div class="itens">G</div>
+        <div class="itens">Exemplo de bloco A</div>
+        <div class="itens">Exemplo de bloco B</div>
+        <div class="itens">Exemplo de bloco C</div>
+        <div class="itens">Exemplo de bloco D</div>
+        <div class="itens">Exemplo de bloco E</div>
+        <div class="itens">Exemplo de bloco F</div>
+        <div class="itens">Exemplo de bloco G</div>
     </div>
     
 </body>
