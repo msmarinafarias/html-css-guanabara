@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando flex-basis</title>
+    <style>
+        div.conteiner {
+            background-color: beige;
+            height: 300px;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.itens {
+            background-color: brown;
+            color: white;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+            flex-basis: 100px;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="itens">ABCD</div>
+        <div class="itens">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas dolores, labore eius id necessitatibus quasi temporibus porro reiciendis iure. Cumque vero consectetur corrupti blanditiis nam eum ex quibusdam hic nemo.</div>
+        <div class="itens">EFGH</div>
+        <div class="itens">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero qui sed, veritatis culpa totam quasi provident quod quaerat, fuga nostrum error unde, aspernatur expedita officiis iste perspiciatis inventore eaque perferendis.</div>
+        <div class="itens">IJKL</div>
+    </div>
+    
+</body>
+</html>

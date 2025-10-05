@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando flex-basis</title>
+    <style>
+        div.conteiner {
+            background-color: beige;
+            height: 300px;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.itens {
+            background-color: brown;
+            color: white;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+            flex-basis: 200px;
+        }
+
+        div#cxA {
+           flex-shrink: 1;
+           flex-grow: 1; 
+        }
+
+        div#cxB {
+            flex-shrink: 0;
+            flex-grow: 2;
+        }
+
+        div#cxC {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="itens" id="cxA">ABCD</div>
+        <div class="itens" id="cxB">EFGH</div>
+        <div class="itens" id="cxC">IJKL</div>
+    </div>
+    
+</body>
+</html>
