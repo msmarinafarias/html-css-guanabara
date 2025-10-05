@@ -3,47 +3,61 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
-html, body {
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     background-color: lightsteelblue;
-    height: 100vh;
-    width: 100vw;
 }
 
 header {
     background-color: darkslateblue;
     color: white;
-    height: 150px;
+    padding: 10px;
     margin-bottom: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2.5em;
-    margin-bottom: 20px;
-    padding: 20px 0px 20px 10px;
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.400);
+    padding: 5px 0px 0px 5px;
+    margin-bottom: 15px;
+    flex: 0 0 200px;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }
 
 nav a {
     background-color: darkgoldenrod;
     color: white;
     text-decoration: none;
+    text-align: center;
     font-size: 1.2em;
-    padding: 15px;
-    margin-left: 5px;
+    padding: 10px;
+    margin: 5px;
     border-radius: 5px;
 }
 
 nav a:hover {
     background-color: blueviolet;
+    transition: background-color .3s;
 }
 
 main {
     background-color: white;
-    width: 70vw;
+    width: 60vw;
     margin: auto;
     padding: 20px;
     text-align: justify;
