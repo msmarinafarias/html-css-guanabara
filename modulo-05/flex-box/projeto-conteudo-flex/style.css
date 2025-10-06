@@ -62,8 +62,8 @@ article > div.media { /*REVER ESSA CONFIGURAÇÃO*/
 
 div.media > img {
     display: block;
-    width: 560px;
     margin: auto;
+    width: 560px;
     padding: 25px;
 }
 
@@ -95,7 +95,7 @@ footer > p > a {
     
     div.media > img {
     display: block;
-    width: 415px;
+    width: 350px;
     margin: auto;
     padding: 25px;
 }
@@ -103,7 +103,7 @@ footer > p > a {
 div.media > iframe {
     display: block;
     margin: auto;
-    width: 100%;
+    width: 90%;
 
 }
 }
